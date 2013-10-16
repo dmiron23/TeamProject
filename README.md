@@ -1,4 +1,0 @@
-TeamProject
-===========
-
-Team Project
