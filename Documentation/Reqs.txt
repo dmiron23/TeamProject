@@ -1,0 +1,9 @@
+Things to be considered before starting
+
+- Type of PL to be used  : JAVA/SWING
+- Types of hash functions to be used : examples
+- Types of input : numerical , alphanumerical , provided by the user
+- Types UI Views : different animation component based on type of sorting/hashing to be performed
+- Types of components : Scalable/Partially Scalable
+- User interaction level : allowed to control the flow of animation and drag/drop items inside components 
+to test understanding / automation of process and little control to the user
