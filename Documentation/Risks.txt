@@ -1,0 +1,194 @@
+
+'''Risk ID''' R.1
+
+'''Category''' Organization
+
+'''Description''' The situation in which one member leaves the team.
+
+'''Probability''' low
+
+'''Impact''' Less time available for a particular task.
+
+'''Severity''' Moderate
+
+'''Status''' Identified
+
+'''Controls''' Redirect workload of the person who left to the remaining members of the team in such a way that it doesn't delay the whole project.
+
+----
+[[br]]
+
+
+'''Risk ID''' R.2
+
+'''Category''' Planning
+
+'''Description''' We run out of time for the project.
+
+'''Probability''' medium
+
+'''Impact''' Unfinished project.
+
+'''Severity''' Moderate
+
+'''Status''' Identified
+
+'''Controls''' Strict control of smaller tasks. Make sure everything is on schedule.
+
+----
+[[br]]
+
+
+'''Risk ID''' R.3
+
+'''Category''' Skills
+
+'''Description''' A certain task surpasses team member's skill set. 
+
+'''Probability''' medium
+
+'''Impact''' Task unable to be performed.
+
+'''Severity''' Moderate
+
+'''Status''' Identified
+
+'''Controls''' Scrum master will either reallocate the task or will allow more time for its completion to incorporate training.
+Optionally, time can be allocated for the specified member to research the problem and earn the necessary skills to complete the task.
+
+----
+[[br]]
+
+
+'''Risk ID''' R.4
+
+'''Category''' Planning
+
+'''Description''' Sub-task falls behind the schedule.
+
+'''Probability''' medium
+
+'''Impact''' If the task is important enough it may end up delaying the entire project.
+
+'''Severity''' Moderate-High 
+
+'''Status''' Identified
+
+'''Controls''' Scrum master will redirect work flow such that the task is finished in time.
+Optionally, if the task is low priority or simply unnecessary then the task can be dropped.
+
+----
+[[br]]
+
+
+'''Risk ID''' R.5
+
+'''Category''' Technical
+
+'''Description''' Working files become corrupt.
+
+'''Probability''' low
+
+'''Impact''' Loss of project.
+
+'''Severity''' High
+
+'''Status''' Identified
+
+'''Controls''' Create regular backups of all files using version control software.
+
+----
+[[br]]
+
+'''Risk ID''' R.6
+
+'''Category''' Communication
+
+'''Description''' Primary mode of communication fails/crashes.
+
+'''Probability''' low
+
+'''Impact''' Unable to get information through from various team members, not knowing how the task is progressing.
+
+'''Severity''' Moderate
+
+'''Status''' Identified
+
+'''Controls''' We will fall back on secondary and tertiary methods of communication.
+
+----
+[[br]]
+
+'''Risk ID''' R.7
+
+'''Category''' Political
+
+'''Description''' Conflicts between the team members who will disagree upon which approach is to be taken.
+
+'''Probability''' medium
+
+'''Impact''' Less time available for a particular task.
+
+'''Severity''' Moderate
+
+'''Status''' Identified
+
+'''Controls''' We have an odd number of members so we can decide this by voting. No abstentions.
+
+----
+[[br]]
+
+'''Risk ID''' R.8
+
+'''Category''' Organization
+
+'''Description''' New member added to the team.
+
+'''Probability''' low
+
+'''Impact''' Changes within the work flow for the project.
+
+'''Severity''' Moderate
+
+'''Status''' Identified
+
+'''Controls''' Scrum master will decide how to redistribute task according to the new member's skill set.
+Time will need to be set aside to bring the new member up to speed on the tasks and proposed solutions, to get them familiar with the work and get them started with the materials.
+
+----
+[[br]]
+
+'''Risk ID''' R.9
+
+'''Category''' Requirements
+
+'''Description''' Customer requirements change mid-project.
+
+'''Probability''' low
+
+'''Impact''' Time wasted in the wrong direction.
+
+'''Severity''' Moderate
+
+'''Status''' Identified
+
+'''Controls''' Scrum reallocates work flow to minimize any delays and utilizes any slack time available.
+
+----
+[[br]]
+
+'''Risk ID''' R.10
+
+'''Category''' Requirements
+
+'''Description''' Client requirements are incorrect.
+
+'''Probability''' low
+
+'''Impact''' Client is unhappy with the deliverables.
+
+'''Severity''' High
+
+'''Status''' Identified
+
+'''Controls''' Rapid prototyping ensure client is receiving regular updates and can provide continuous feedback.
