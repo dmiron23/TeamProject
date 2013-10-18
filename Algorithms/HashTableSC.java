@@ -1,14 +1,17 @@
+import java.util.ArrayList;
+
 
 public class HashTableSC {
 
 	private int capacity;
-	private String[] bucket;
+	private ArrayList<String>[] bucket;
 	private int size;
 
 
 	public HashTableSC(int capacity){
 		this.capacity = capacity;
-		bucket = new String[capacity];
+		for(int i = 0; i< capacity; i++)
+			bucket[i] = new ArrayList<String>();
 		size = 0;
 	}
 	
@@ -28,7 +31,6 @@ public class HashTableSC {
 		else if (option == 1) 
 			return polynomialHash(s);
 		else return BPHash(s);
-		
 	}
 	
 	private int addHash(String s){
@@ -52,46 +54,24 @@ public class HashTableSC {
 	}
 
 	public void insert (String s, int option){
-		if (size == capacity)
-			System.out.println("Memory full");
-		else{
-			int step = 0;
-			while (bucket[(hash(s,option) + step) % capacity] != null)
-				step++;
-			bucket[hash(s,option) + step] = s;	
+		int key = hash(s,option);
+		if (bucket[key].contains(s))
+			System.out.println("Object exists");
+		else
+			{bucket[key].add(s);
 			size++;
 			}
 	}
 
-	
-	
-	private int findPosition(String s, int option){
-		if (this.isEmpty()) 
-			return -1;
-		else{
-			for (int step = 0; step < capacity; step++)
-				if (bucket[(hash(s,option) + step) % capacity].equals(s))
-					return (hash(s,option) + step) % capacity;
-			return -1;
-		}
-	}
-	
 	public boolean find(String s, int option){
-		return findPosition(s, option) != -1;
+		int key = hash(s,option);
+		return bucket[key].contains(s);
 	}
 	
 	public void remove(String s, int option){
-		int position = findPosition(s, option);
-		if (position == -1) 
+		int key = hash(s, option);
+		if (bucket[key].remove(s) != true) 
 			System.out.println("Item does not exist.");
-		else {
-			bucket[position] = null;
-			size--;
-		}
-		
 	}
-	
-	
-	
-	
+		
 }
