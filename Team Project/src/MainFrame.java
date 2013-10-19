@@ -1,3 +1,6 @@
+import canvas.AnimationControl;
+import canvas.canvas;
+
 /*
  * MainFrame.java
  *
@@ -36,7 +39,12 @@ public class MainFrame extends javax.swing.JFrame {
 		Pause = new javax.swing.JButton();
 		Previous = new javax.swing.JButton();
 		Next = new javax.swing.JButton();
-		jPanel3 = new javax.swing.JPanel();
+		
+		//Make the magic happen.
+		canvasPanel = new canvas();
+		AnimationControl ac = new AnimationControl(canvasPanel);
+		ac.startAnimation();
+		
 		jMenuBar1 = new javax.swing.JMenuBar();
 		jMenu1 = new javax.swing.JMenu();
 		jMenuItem1 = new javax.swing.JMenuItem();
@@ -258,7 +266,7 @@ public class MainFrame extends javax.swing.JFrame {
 		Previous.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 		Previous.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
-				PreviousActionPerformed(evt);
+				//PreviousActionPerformed(evt);
 			}
 		});
 
@@ -396,15 +404,15 @@ public class MainFrame extends javax.swing.JFrame {
 																javax.swing.GroupLayout.DEFAULT_SIZE,
 																Short.MAX_VALUE))));
 
-		jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+		canvasPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-		javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(
-				jPanel3);
-		jPanel3.setLayout(jPanel3Layout);
-		jPanel3Layout.setHorizontalGroup(jPanel3Layout.createParallelGroup(
+		javax.swing.GroupLayout gl_canvasPanel = new javax.swing.GroupLayout(
+				canvasPanel);
+		canvasPanel.setLayout(gl_canvasPanel);
+		gl_canvasPanel.setHorizontalGroup(gl_canvasPanel.createParallelGroup(
 				javax.swing.GroupLayout.Alignment.LEADING).addGap(0, 910,
 				Short.MAX_VALUE));
-		jPanel3Layout.setVerticalGroup(jPanel3Layout.createParallelGroup(
+		gl_canvasPanel.setVerticalGroup(gl_canvasPanel.createParallelGroup(
 				javax.swing.GroupLayout.Alignment.LEADING).addGap(0, 539,
 				Short.MAX_VALUE));
 
@@ -460,7 +468,7 @@ public class MainFrame extends javax.swing.JFrame {
 																.addGap(12, 12,
 																		12)
 																.addComponent(
-																		jPanel3,
+																		canvasPanel,
 																		javax.swing.GroupLayout.DEFAULT_SIZE,
 																		javax.swing.GroupLayout.DEFAULT_SIZE,
 																		Short.MAX_VALUE)))
@@ -480,7 +488,7 @@ public class MainFrame extends javax.swing.JFrame {
 										javax.swing.GroupLayout.PREFERRED_SIZE)
 								.addPreferredGap(
 										javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(jPanel3,
+								.addComponent(canvasPanel,
 										javax.swing.GroupLayout.DEFAULT_SIZE,
 										javax.swing.GroupLayout.DEFAULT_SIZE,
 										Short.MAX_VALUE))
@@ -549,7 +557,7 @@ public class MainFrame extends javax.swing.JFrame {
 	private javax.swing.JMenuItem jMenuItem5;
 	private javax.swing.JPanel jPanel1;
 	private javax.swing.JPanel jPanel2;
-	private javax.swing.JPanel jPanel3;
+	private canvas canvasPanel;
 	private javax.swing.JScrollPane jScrollPane1;
 	private javax.swing.JTextField jTextField1;
 	private javax.swing.JTextField jTextField2;
