@@ -53,7 +53,7 @@ public class AnimationControl implements ActionListener, TweenListener {
 			
 			//Wait for arbitrary length of time.
 			
-			Thread th = new DelayThread(3000,this);
+			Thread th = new DelayThread(3000, this, 2);	//Delay for 3s, set flag to 2.
 			th.start();
 		}else if(stateFlag == 2){
 
